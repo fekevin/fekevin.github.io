@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Kevin Blog</title>
+  <title>从输入域名到最后呈现经历的过程 | Kevin Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Kevin Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="具体步骤1.浏览器的地址栏输入URL并按下回车。2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。3.DNS解析URL对应的IP。4.根据IP建立TCP连接（三次握手）。5.HTTP发起请求。6.服务器处理请求，浏览器接收HTTP响应。7.渲染页面，构建DOM树。8.关闭TCP连接（四次挥手）。">
+<meta name="keywords" content="http">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从输入域名到最后呈现经历的过程">
+<meta property="og:url" content="http://yoursite.com/2018/04/03/url/index.html">
 <meta property="og:site_name" content="Kevin Blog">
+<meta property="og:description" content="具体步骤1.浏览器的地址栏输入URL并按下回车。2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。3.DNS解析URL对应的IP。4.根据IP建立TCP连接（三次握手）。5.HTTP发起请求。6.服务器处理请求，浏览器接收HTTP响应。7.渲染页面，构建DOM树。8.关闭TCP连接（四次挥手）。">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-03T01:11:17.173Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kevin Blog">
+<meta name="twitter:title" content="从输入域名到最后呈现经历的过程">
+<meta name="twitter:description" content="具体步骤1.浏览器的地址栏输入URL并按下回车。2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。3.DNS解析URL对应的IP。4.根据IP建立TCP连接（三次握手）。5.HTTP发起请求。6.服务器处理请求，浏览器接收HTTP响应。7.渲染页面，构建DOM树。8.关闭TCP连接（四次挥手）。">
   
     <link rel="alternative" href="/atom.xml" title="Kevin Blog" type="application/atom+xml">
   
@@ -158,18 +163,16 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-url"
-         class="article article-type-post  article-index" itemscope
+            <article id="post-url"
+         class="article article-type-post " itemscope
          itemprop="blogPost">
   <div class="article-inner">
     
     <header class="article-header">
       
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/03/url/">从输入域名到最后呈现经历的过程</a>
+    <h1 class="article-title" itemprop="name">
+      从输入域名到最后呈现经历的过程
     </h1>
   
 
@@ -179,16 +182,49 @@
 </a>
       
       
+      <span class="archive-article-date">
+                                    阅读量 <span id="busuanzi_value_page_pv"></span>
+                                    </span>
+      
     </header>
 
     
     <div class="article-entry" itemprop="articleBody">
       
-      <h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><p>1.浏览器的地址栏输入URL并按下回车。<br>2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。<br>3.DNS解析URL对应的IP。<br>4.根据IP建立TCP连接（三次握手）。<br>5.HTTP发起请求。<br>6.服务器处理请求，浏览器接收HTTP响应。<br>7.渲染页面，构建DOM树。<br>8.关闭TCP连接（四次挥手）。<br>
-      
-      <a class="article-more-a" href="/2018/04/03/url/#more">
-        more >></a>
-      
+      <h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><p>1.浏览器的地址栏输入URL并按下回车。<br>2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。<br>3.DNS解析URL对应的IP。<br>4.根据IP建立TCP连接（三次握手）。<br>5.HTTP发起请求。<br>6.服务器处理请求，浏览器接收HTTP响应。<br>7.渲染页面，构建DOM树。<br>8.关闭TCP连接（四次挥手）。<br><a id="more"></a></p>
+<h3 id="详细描述"><a href="#详细描述" class="headerlink" title="详细描述"></a>详细描述</h3><h4 id="HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存"><a href="#HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存" class="headerlink" title="HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存."></a>HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存.</h4><pre><code>强制缓存：
+    cache-control：中的max-age保存一个相对时间。表示浏览器接收到文件之后，缓存在相对应的时间内均有效。如果同时存在cache-control和Expires,浏览器优先使用cache-control
+    Expires：是一个绝对时间，即服务器时间。浏览器检查当前时间，如果还没有失效就直接用缓存文件。该方法有一个问题，服务器可能和客户端时间不一致，因此该字段很少使用。 
+对比缓存：
+    last-modified是第一次请求资源时，服务器返回的字段，表示最后一次更新时间。下次浏览器请求资源时就发送if-modified-since字段。服务器用本地last-modified时间与if-modified-since时间比较，如果不一致则认为缓存已过期并返回新的资源给浏览器，如果时间一致则返回304状态码，让浏览器继续使用缓存。
+    Etag：资源的实体标识（哈希字符串），当资源内容更新时，Etag会改变。服务器会判断Etag是否变化，如果变化返回新资源，否则返回304。
+</code></pre><h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>   在地址栏输入域名并不是最后资源所在的真实位置，域名只是一个IP地址的一个映射。</p>
+<pre><code>1.首先浏览器会先查找本地hosts文件是否有这个网址映射关系，如果有就调用这个IP地址映射，完成域名解析。
+2.如果没有找到则会查找本地的DNS解析器缓存，如果找到则返回。
+3.如果还是没有找到则会查找本地DNS服务器，如果找到则返回。
+4.最后迭代查询，按根域服务器-&gt;顶级域名.cn-&gt;第二层域名-&gt;子域名的顺序找到IP地址
+</code></pre><h4 id="发起TCP的3次握手"><a href="#发起TCP的3次握手" class="headerlink" title="发起TCP的3次握手"></a>发起TCP的3次握手</h4><p>在解析域名之后，获取了服务器的IP地址，开始建立连接，这是由TCP协议完成的，主要通过三次握手进行连接。</p>
+<pre><code>第一次握手：建立连接时，客户端发送syn包(syn=j)到服务器，并进入SYN_SENT状态，等待服务器确认；
+第二层握手：服务器接收到syn包，必须确认客户端的SYN(ack=j+1)，同时自己也发送一个SYN包(syn=k)，即SYN+ACK包，此时服务器进入SYN_RECV状态；
+第三次握手：客户端收到服务器的SYN_ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED(TCP连接成功)状态，完成三次握手。
+</code></pre><h4 id="建立TCP连接后发起http请求"><a href="#建立TCP连接后发起http请求" class="headerlink" title="建立TCP连接后发起http请求"></a>建立TCP连接后发起http请求</h4><pre><code>完整的HTTP请求包含请求行，请求头部，请求主体三个部分。(具体就不一一讲述了)
+</code></pre><h4 id="服务器响应http请求，浏览器接收响应"><a href="#服务器响应http请求，浏览器接收响应" class="headerlink" title="服务器响应http请求，浏览器接收响应"></a>服务器响应http请求，浏览器接收响应</h4><pre><code>服务器在收到浏览器发送的HTTP请求之后，会收到HTTP报文封装成HTTP的Request对象，并通过不同的web服务器进行处理，处理完的结果以HTTP的Response对象返回，主要包括状态码，响应头，响应报文三个部分。
+状态码主要包括以下部分：
+    1xx：指示信息-表示请求已接收，继续处理
+    2xx：成功-表示请求已被成功接收，理解，接收
+    3xx：重定向-要完成请求必须进行更进一步的操作
+    4xx：客户端错误-请求语法错误或请求无法实现
+    5xx：服务器端错误：服务器未能合法实现请求
+响应头主要由：cache-control、connection、date、pragma等组成。
+</code></pre><h4 id="浏览器解析html，页面渲染"><a href="#浏览器解析html，页面渲染" class="headerlink" title="浏览器解析html，页面渲染"></a>浏览器解析html，页面渲染</h4><p>在浏览器还没接收到完整的HTML文件时，它就开始渲染页面了，在遇到外部链入的脚本或图片时，会再次发生HTTP请求重复上述步骤。在收到css文件后对已经渲染的页面重新渲染，加入它们对应的样式，图片文件加载完立刻显示在相应的位置。在这一过程中可能会触发重绘或重排。</p>
+<pre><code>reflow：也称作layout，中文叫回流，一般意味着元素的内容、结构、位置或尺寸发生了变化，需要重新计算样式和渲染树，这个过程称为reflow。
+repaint：中文重绘，意味着元素发生的改变只是影响了元素的一些外观之类的时候(例如：背景色，边框颜色，文字颜色等)，此时只需要应用新样式绘制这个元素就可以了。
+</code></pre><h4 id="四次挥手结束，关闭TCP连接"><a href="#四次挥手结束，关闭TCP连接" class="headerlink" title="四次挥手结束，关闭TCP连接"></a>四次挥手结束，关闭TCP连接</h4><p>通过四次挥手关闭连接(FIN ACK、ACK、FIN ACK、ACK)。</p>
+<pre><code>第一次挥手：浏览器发完数据后，发生FIN请求断开连接
+第二次挥手：服务器发送ACK表示同意断开连接
+第三次挥手：服务器发送FIN请求断开连接
+第四次挥手：浏览器需要返回ACK表示同意断开
+</code></pre>
       
 
       
@@ -210,17 +246,14 @@
       
 
       
-      <p class="article-more-link">
-        <a class="article-more-a" href="/2018/04/03/url/">
-          展开全文 >></a>
-      </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -235,16 +268,76 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#具体步骤"><span class="toc-number">1.</span> <span class="toc-text">具体步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#详细描述"><span class="toc-number">2.</span> <span class="toc-text">详细描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存"><span class="toc-number">2.1.</span> <span class="toc-text">HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#域名解析"><span class="toc-number">2.2.</span> <span class="toc-text">域名解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#发起TCP的3次握手"><span class="toc-number">2.3.</span> <span class="toc-text">发起TCP的3次握手</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建立TCP连接后发起http请求"><span class="toc-number">2.4.</span> <span class="toc-text">建立TCP连接后发起http请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#服务器响应http请求，浏览器接收响应"><span class="toc-number">2.5.</span> <span class="toc-text">服务器响应http请求，浏览器接收响应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浏览器解析html，页面渲染"><span class="toc-number">2.6.</span> <span class="toc-text">浏览器解析html，页面渲染</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#四次挥手结束，关闭TCP连接"><span class="toc-number">2.7.</span> <span class="toc-text">四次挥手结束，关闭TCP连接</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="url" data-title="从输入域名到最后呈现经历的过程" data-url="http://yoursite.com/2018/04/03/url/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+
+
 <!-- 目录内容 -->
 
+<p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+  <span class="btn-bg"></span>
+  <span class="btn-text">文章导航</span>
+</p>
+<div id="toc-article" class="toc-article">
+  <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#具体步骤"><span class="toc-number">1.</span> <span class="toc-text">具体步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#详细描述"><span class="toc-number">2.</span> <span class="toc-text">详细描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存"><span class="toc-number">2.1.</span> <span class="toc-text">HTTP缓存有多种规则，根据是否需要重新向服务器发起请求分为两种：强制缓存，对比缓存.</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#域名解析"><span class="toc-number">2.2.</span> <span class="toc-text">域名解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#发起TCP的3次握手"><span class="toc-number">2.3.</span> <span class="toc-text">发起TCP的3次握手</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建立TCP连接后发起http请求"><span class="toc-number">2.4.</span> <span class="toc-text">建立TCP连接后发起http请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#服务器响应http请求，浏览器接收响应"><span class="toc-number">2.5.</span> <span class="toc-text">服务器响应http请求，浏览器接收响应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#浏览器解析html，页面渲染"><span class="toc-number">2.6.</span> <span class="toc-text">浏览器解析html，页面渲染</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#四次挥手结束，关闭TCP连接"><span class="toc-number">2.7.</span> <span class="toc-text">四次挥手结束，关闭TCP连接</span></a></li></ol></li></ol>
+</div>
+<script type="text/javascript">
+  function showToc() {
+    var toc_article = document.getElementById("toc-article");
+    var show_toc_btn = document.getElementById("show-toc-btn");
+    toc_article.setAttribute("style", "display:block");
+    show_toc_btn.setAttribute("style", "display:none");
+  };
+
+  function showBtn() {
+    var toc_article = document.getElementById("toc-article");
+    var show_toc_btn = document.getElementById("show-toc-btn");
+    toc_article.setAttribute("style", "display:none");
+    show_toc_btn.setAttribute("style", "display:block");
+  };
+</script>
+
 <!-- 目录内容结束 -->
-
-  
-  
-
 
           </div>
         </div>
@@ -270,8 +363,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
