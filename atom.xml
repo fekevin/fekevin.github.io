@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.itjiaolong.top/"/>
-  <updated>2018-04-08T07:39:37.507Z</updated>
+  <updated>2018-04-08T07:42:31.943Z</updated>
   <id>http://blog.itjiaolong.top/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript关于数组的一些方法整理</title>
+    <link href="http://blog.itjiaolong.top/2018/04/08/JavaScript%E5%85%B3%E4%BA%8E%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%B3%95%E6%95%B4%E7%90%86/"/>
+    <id>http://blog.itjiaolong.top/2018/04/08/JavaScript关于数组的一些方法整理/</id>
+    <published>2018-04-08T06:42:58.000Z</published>
+    <updated>2018-04-08T07:42:31.943Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="会改变自身的方法"><a href="#会改变自身的方法" class="headerlink" title="会改变自身的方法"></a>会改变自身的方法</h3><ol><li><code>array.copyWithin（target, start [, end = this.length]）</code>用于在数组内的替换操作（有兼容问题）start和end允许为负值。</li><li><code>array.fill(value [,statrt = 0[, end = this.length]])</code>将数组中指定区间的所有元素的值替换为value，start和end允许为负值。</li><li><code>array.pop()</code>删除一个数组中的最后一个元素，并返回这个元素。</li><li><code>array.shift()</code>删除数组第一个元素，并返回这个元素。</li><li><code>array.push()</code>添加一个或者多个元素到数组末尾，并返回数组新的长度。</li><li><code>array.unshift()</code>在数组开头插入一个或者多个元素，并返回数组新长度。</li><li><code>array.reverse()</code>前后颠倒数组中元素的位置，第一个元素会成为最后一个。</li><li><code>array.sort([function(a, b)])</code>对数组的元素做原地排序，并返回这个数组。</li><li><code>array.splice(start, deleteCount[, item1[, item2...])</code>在任意的位置给数组添加或者删除任意个元素，返回被删除元素组成的数组，没有则返回空数组。</li></ol><a id="more"></a><h3 id="不会改变自身的方法"><a href="#不会改变自身的方法" class="headerlink" title="不会改变自身的方法"></a>不会改变自身的方法</h3><ol><li><code>array.concat(value1, value2.....)</code>将传入的数组或者非数组值与原数组合并，组成一个新的数组并返回。</li><li><code>array.includes(searchElement, [, fromIndex])</code>用来判断当前数组是否包含某指定的值，返回布尔值。</li><li><code>array.join([separator = &#39;,&#39;])</code>将数组中的所有元素连接成一个字符串（默认用逗号作为分隔符，如果separator是一个空的字符串，那么数组中的所有元素将被直接连接），如果元素是undefined或者null，则会转换为空字符串。</li><li><code>array.slice([begin = 0 [, end = this.length - 1]])</code>把数组中一部分的浅复制（shallow copy）存入一个新的数组对象中，并返回这个新的数组。</li><li><code>array.toString()</code>返回一个字符串，该字符串由数组中的每个元素的toString()返回值经调用join()方法连接，（由逗号隔开）组成。</li><li><code>array.toLocaleString()</code>返回一个字符串表示数组中的元素。数组中的元素将使用各自的toLocaleString方法转换成字符串，这些字符串将使用一个特定的语言环境的字符串（例如逗号）隔开。</li><li><code>array.indexOf(searchElement[, fromIndex = 0])</code>返回指定元素能在数组中找到的第一个索引值，否则返回-1。</li><li><code>array.lastIndexOf(searchElement[, fromIndex = arr.length - 1])</code> 返回指定元素在数组中的最后一个索引，如果不存在则返回-1。从数组的后面向前排查。</li></ol><h3 id="数组遍历的方法"><a href="#数组遍历的方法" class="headerlink" title="数组遍历的方法"></a>数组遍历的方法</h3><ol><li><code>array.forEach((v, i, a) =&gt; {})</code>让数组的每一行都执行一次给定的函数，(v表示当前值，i当前索引，a数组本身)。</li><li><code>array.entries()</code>返回一个Array Iterator对象，该对象包含数组中每一个索引的键值对。</li><li><code>array.every(callback(v, i, a){})</code>callback只会为那些已经被赋值的索引调用，不会为那些删除或者从来没有被赋值的索引调用（返回一个Boolean值，即对每个元素callback函数结果作逻辑&amp;操作）。</li><li><code>array.some()</code> 使用方法和arr.evety()方法相同。（对每个元素的callback函数结果作逻辑||操作）。</li><li><code>array.filter((v, i, a) =&gt; {})</code>使用指定函数测试所有元素，并创建一个包含所有测试通过元素的新数组。（callback函数返回一个布尔值，true通过测试，callback只会在已经赋值的索引上调用，对于那些已经被删除或者从未被赋值的索引不会调用）。</li><li><code>array.find((v, i, a) =&gt;{})</code>目前有兼容性问题。返回数组中满足测试条件的第一个元素，如果没有满足条件的元素，则返回undefined。</li><li><code>array.keys()</code>返回一个数组索引的迭代器（类似于arr.entries()方法）。</li><li><code>array.map((v, i, a) =&gt; {})</code>返回一个由原数组中的每一个元素调用一个指定方法后的新返回值组成的新数组，map不修改调用它本身的原数组（当然可以在callback执行时改变原数组）。</li><li><code>array.reduce(callback[, initialValue])</code>该方法接收一个函数作为累加器（accumulator），数组中的每个值（从左到右）开始合并，最终为一个值。<pre> previousValue:上一次调用回调返回的值，或者是提供的初始值（initialValue） currentValue: 数组中当前被处理的元素 index： index array： 调用的数组 如果 initialValue 在调用 reduce 时被提供，那么第一个 previousValue 等于 initialValue ，并且currentValue 等于数组中的第一个值；如果initialValue 未被提供，那么previousValue 等于数组中的第一个值，currentValue等于数组中的第二个值。</pre></li><li><code>array.reduceRight()</code>使用同<code>array.reduce()</code>相同，执行方向相反。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;会改变自身的方法&quot;&gt;&lt;a href=&quot;#会改变自身的方法&quot; class=&quot;headerlink&quot; title=&quot;会改变自身的方法&quot;&gt;&lt;/a&gt;会改变自身的方法&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;array.copyWithin（target, start [, end = this.length]）&lt;/code&gt;用于在数组内的替换操作（有兼容问题）start和end允许为负值。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.fill(value [,statrt = 0[, end = this.length]])&lt;/code&gt;将数组中指定区间的所有元素的值替换为value，start和end允许为负值。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.pop()&lt;/code&gt;删除一个数组中的最后一个元素，并返回这个元素。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.shift()&lt;/code&gt;删除数组第一个元素，并返回这个元素。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.push()&lt;/code&gt;添加一个或者多个元素到数组末尾，并返回数组新的长度。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.unshift()&lt;/code&gt;在数组开头插入一个或者多个元素，并返回数组新长度。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.reverse()&lt;/code&gt;前后颠倒数组中元素的位置，第一个元素会成为最后一个。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.sort([function(a, b)])&lt;/code&gt;对数组的元素做原地排序，并返回这个数组。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;array.splice(start, deleteCount[, item1[, item2...])&lt;/code&gt;在任意的位置给数组添加或者删除任意个元素，返回被删除元素组成的数组，没有则返回空数组。&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://blog.itjiaolong.top/tagstags/JavaScript/"/>
+    
+      <category term="Array" scheme="http://blog.itjiaolong.top/tagstags/Array/"/>
+    
+  </entry>
   
   <entry>
     <title>从输入域名到最后呈现经历的过程</title>
