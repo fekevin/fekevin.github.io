@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Kevin Blog">
 <meta property="og:description" content="具体步骤1.浏览器的地址栏输入URL并按下回车。2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。3.DNS解析URL对应的IP。4.根据IP建立TCP连接（三次握手）。5.HTTP发起请求。6.服务器处理请求，浏览器接收HTTP响应。7.渲染页面，构建DOM树。8.关闭TCP连接（四次挥手）。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-08T07:39:37.507Z">
+<meta property="og:updated_time" content="2018-04-08T07:48:16.826Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从输入域名到最后呈现经历的过程">
 <meta name="twitter:description" content="具体步骤1.浏览器的地址栏输入URL并按下回车。2.浏览器查找当前URL是否存在缓存，并比较缓存是否过期。3.DNS解析URL对应的IP。4.根据IP建立TCP连接（三次握手）。5.HTTP发起请求。6.服务器处理请求，浏览器接收HTTP响应。7.渲染页面，构建DOM树。8.关闭TCP连接（四次挥手）。">
@@ -78,6 +78,12 @@
                                 <li>
                                     <a href="/categories">
                                         分类
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/tags">
+                                        标签
                                     </a>
                                 </li>
                                 
@@ -146,6 +152,8 @@
                                     
                                 
                                     
+                                
+                                    
                                         
 
                                             <nav class="header-nav">
@@ -166,21 +174,27 @@
                                                 <ul style="width: 70%">
                                                     
                                                         
-                                                            <li style="width: 33.333333333333336%">
+                                                            <li style="width: 25%">
                                                                 <a href="/">
                                                                     主页
                                                                 </a>
                                                             </li>
                                                             
-                                                            <li style="width: 33.333333333333336%">
+                                                            <li style="width: 25%">
                                                                 <a href="/archives">
                                                                     归档
                                                                 </a>
                                                             </li>
                                                             
-                                                            <li style="width: 33.333333333333336%">
+                                                            <li style="width: 25%">
                                                                 <a href="/categories">
                                                                     分类
+                                                                </a>
+                                                            </li>
+                                                            
+                                                            <li style="width: 25%">
+                                                                <a href="/tags">
+                                                                    标签
                                                                 </a>
                                                             </li>
                                                             
@@ -275,6 +289,17 @@ repaint：中文重绘，意味着元素发生的改变只是影响了元素的�
 	</div>
 
                         
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/HTTP//" class="article-tag-list-link color5">HTTP</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
                             
 
@@ -482,6 +507,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           </label>
                         <ul class="article-tag-list" q-show="showTags">
                             
+                                <li class="article-tag-list-item">
+                                    <a href="javascript:void(0)" class="js-tag color4">
+                                        CSS
+                                    </a>
+                                </li>
+                                
+                                <li class="article-tag-list-item">
+                                    <a href="javascript:void(0)" class="js-tag color3">
+                                        布局
+                                    </a>
+                                </li>
+                                
                                 <li class="article-tag-list-item">
                                     <a href="javascript:void(0)" class="js-tag color5">
                                         http
