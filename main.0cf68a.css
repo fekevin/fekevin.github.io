@@ -882,7 +882,8 @@ html {
 
 .left-col {
     /* background: #fff; */
-    background: url('./img/left-menu.jpg') no-repeat;
+    background: url('./img/left-menu.png') no-repeat;
+    background-size: cover;
     width: 300px;
     position: fixed;
     opacity: 1;
@@ -911,11 +912,11 @@ html {
 }
 
 .left-col #header a {
-    color: #696969
+    color: #000000
 }
 
 .left-col #header a:hover {
-    color: #b0a0aa
+    color: #000000
 }
 
 .left-col #header .header-subtitle {
