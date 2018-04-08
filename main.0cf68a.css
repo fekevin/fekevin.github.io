@@ -882,7 +882,7 @@ html {
 
 .left-col {
     /* background: #fff; */
-    background: url('./img/left-menu') no-repeat;
+    background: url('./img/left-menu.jpg') no-repeat;
     width: 300px;
     position: fixed;
     opacity: 1;
