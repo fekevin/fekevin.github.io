@@ -881,7 +881,8 @@ html {
 }
 
 .left-col {
-    background: #fff;
+    /* background: #fff; */
+    background: url('./img/left-menu') no-repeat;
     width: 300px;
     position: fixed;
     opacity: 1;
