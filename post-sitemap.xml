@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>http://blog.itjiaolong.top/2018/04/08/JavaScriptArray/</loc>
+        <lastmod>2018-04-09T05:38:39.405Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://blog.itjiaolong.top/2018/04/08/CSSlayout/</loc>
-        <lastmod>2018-04-09T01:27:52.482Z</lastmod>
+        <lastmod>2018-04-09T05:18:49.520Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,15 +24,7 @@
 
     <url>
         <loc>http://blog.itjiaolong.top/2018/04/03/url/</loc>
-        <lastmod>2018-04-09T01:27:38.259Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://blog.itjiaolong.top/2018/04/08/JavaScriptArray/</loc>
-        <lastmod>2018-04-09T01:27:22.913Z</lastmod>
+        <lastmod>2018-04-09T03:12:04.767Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

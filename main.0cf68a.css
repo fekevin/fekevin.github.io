@@ -1109,18 +1109,23 @@ html {
     font-family: Source Code Pro, Consolas, Monaco, Menlo, monospace
 }
 
-.article-entry code {
+
+/* 测试 */
+
+
+/* .article-entry code {
     background: #eee;
     padding: 0 .3em;
     border: none
-}
+} */
 
-.article-entry pre code {
+
+/* .article-entry pre code {
     background: none;
     text-shadow: none;
     padding: 0;
     color: #fff
-}
+} */
 
 .article-entry .highlight {
     border-radius: 4px
@@ -2322,7 +2327,11 @@ pre .id {
     margin-top: 10px
 }
 
-.article-entry li code,
+
+/* 测试 */
+
+
+/* .article-entry li code,
 .article-entry p code {
     padding: 1px 3px;
     margin: 0 3px;
@@ -2331,7 +2340,7 @@ pre .id {
     font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
     word-wrap: break-word;
     font-size: 14px
-}
+} */
 
 .article-entry blockquote {
     background: #ddd;
@@ -2368,11 +2377,12 @@ pre .id {
     counter-reset: item
 }
 
-.article-entry ol li:before {
+
+/* .article-entry ol li:before {
     counter-increment: item;
     content: counter(item) ".";
     margin-right: 10px
-}
+} */
 
 .article-entry ol,
 .article-entry ul {
@@ -2442,9 +2452,10 @@ pre .id {
     font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace
 }
 
-.article-entry pre code {
+
+/* .article-entry pre code {
     font-size: 14px
-}
+} */
 
 .article-entry table {
     width: 100%;
