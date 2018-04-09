@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://blog.itjiaolong.top">
-  <title>CSS 5种布局方案 | Kevin Blog</title>
+  <title>Category: HTTP | Kevin Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="以下5种布局方案均为两边固定中间自适应。">
-<meta name="keywords" content="CSS,布局">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS 5种布局方案">
-<meta property="og:url" content="http://blog.itjiaolong.top/2018/04/08/CSS-5种布局方案/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Kevin Blog">
+<meta property="og:url" content="http://blog.itjiaolong.top/categories/HTTP/index.html">
 <meta property="og:site_name" content="Kevin Blog">
-<meta property="og:description" content="以下5种布局方案均为两边固定中间自适应。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-08T09:42:22.778Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 5种布局方案">
-<meta name="twitter:description" content="以下5种布局方案均为两边固定中间自适应。">
+<meta name="twitter:title" content="Kevin Blog">
   
   
     <link rel="icon" href="/img/favicon.png">
@@ -210,303 +205,73 @@
                                 <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
                             </div>
                             <div id="js-content" class="content-ll">
-                                <article id="post-CSS-5种布局方案" class="article article-type-post " itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-            <header class="article-header">
-                
+                                
   
-    <h1 class="article-title" itemprop="name">
-      CSS 5种布局方案
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/04/03/url/" class="archive-article-date">
+  	<time datetime="2018-04-03T03:45:54.630Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2018/04/03/url/">从输入域名到最后呈现经历的过程</a>
     </h1>
   
 
-                    
-                        <a href="/2018/04/08/CSS-5种布局方案/" class="archive-article-date">
-  	<time datetime="2018-04-08T07:46:45.095Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-08</time>
-</a>
-                            
-                                
-                                    <span class="archive-article-date">
-                                    阅读量 <span id="busuanzi_value_page_pv"></span>
-                                    </span>
-                                    
-            </header>
-
-            
-                <div class="article-entry" itemprop="articleBody">
-                    
-                                        <p>以下5种布局方案均为两边固定中间自适应。</p>
-<a id="more"></a>
-<h3 id="浮动布局"><a href="#浮动布局" class="headerlink" title="浮动布局"></a>浮动布局</h3><pre><code>&lt;section&gt;
-    &lt;style&gt;
-        .float .left {
-            float: left;
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .float .right {
-            float: right;
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .float .center {
-            background-color: yellow;
-        }
-    &lt;/style&gt;
-    &lt;article class=&quot;float&quot;&gt;
-        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;center&quot;&gt;
-            &lt;h1&gt;浮动布局&lt;/h1&gt;
-        &lt;/div&gt;
-    &lt;/article&gt;
-&lt;/section&gt;
-</code></pre><h3 id="绝对定位布局"><a href="#绝对定位布局" class="headerlink" title="绝对定位布局"></a>绝对定位布局</h3><pre><code>&lt;section&gt;
-    &lt;style&gt;
-        .absolute&gt;div {
-            position: absolute;
-        }
-        .absolute .left {
-            left: 0;
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .absolute .right {
-            right: 0;
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .absolute .center {
-            left: 300px;
-            right: 300px;
-            background-color: yellow;
-        }
-    &lt;/style&gt;
-    &lt;article class=&quot;absolute&quot;&gt;
-        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;center&quot;&gt;
-            &lt;h1&gt;绝对定位布局&lt;/h1&gt;
-        &lt;/div&gt;
-    &lt;/article&gt;
-&lt;/section&gt;
-</code></pre><h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><pre><code>    &lt;section&gt;
-    &lt;style&gt;
-        .flexbox {
-            display: flex;
-        }
-        .flexbox .left {
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .flexbox .right {
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .flexbox .center {
-            flex: 1;
-            background-color: yellow;
-        }
-    &lt;/style&gt;
-    &lt;article class=&quot;flexbox&quot;&gt;
-        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;center&quot;&gt;
-            &lt;h1&gt;flex布局&lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-    &lt;/article&gt;
-&lt;/section&gt;
-</code></pre><h3 id="表格布局"><a href="#表格布局" class="headerlink" title="表格布局"></a>表格布局</h3><pre><code>&lt;section&gt;
-    &lt;style&gt;
-        .table {
-            width: 100%;
-            display: table;
-            height: 100px;
-        }
-        .table&gt;div {
-            display: table-cell;
-        }
-        .table .left {
-            width: 300px;
-            background-color:greenyellow;
-        }
-        .table .right {
-            width: 300px;
-            background-color: greenyellow;
-        }
-        .table .center {
-            background-color: yellow;
-        }
-    &lt;/style&gt;
-    &lt;article class=&quot;table&quot;&gt;
-        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;center&quot;&gt;
-            &lt;h1&gt;表格布局&lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-    &lt;/article&gt;
-&lt;/section&gt;
-</code></pre><h3 id="grid网格布局"><a href="#grid网格布局" class="headerlink" title="grid网格布局"></a>grid网格布局</h3><pre><code>&lt;section&gt;
-    &lt;style&gt;
-        .grid {
-            display: grid;
-            width: 100%;
-            grid-template-rows: 100px;
-            grid-template-columns: 300px auto 300px;
-        }
-        .grid .left {
-            background-color: greenyellow;
-        }
-        .grid .right {
-            background-color: greenyellow;
-        }
-        .grid .center {
-            background-color: yellow;
-        }
-    &lt;/style&gt;
-    &lt;article class=&quot;grid&quot;&gt;
-        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;center&quot;&gt;
-            &lt;h1&gt;网格布局&lt;/h1&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-    &lt;/article&gt;
-&lt;/section&gt;
-</code></pre>
-                                            
-
-                                                
-        </div>
-        <div class="article-info article-info-index">
-            
-                    
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">布局</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">http</a>
         		</li>
       		
 		</ul>
 	</div>
 
-                        
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/CSS//" class="article-tag-list-link color4">CSS</a>
+        			<a href="/categories/HTTP//" class="article-tag-list-link color5">HTTP</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-                            
-
-                                    
-                                                <div class="clearfix"></div>
         </div>
-        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
 </article>
+  
+  
+    </div></section>
+  
 
     
-<nav id="article-nav">
-  
-  
-    <a href="/2018/04/08/JavaScript关于数组的一些方法整理/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JavaScript关于数组的一些方法整理</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
 
-        
-            <aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-            <div class="jump-container" id="js-jump-container" style="display:none;">
-                <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                    <i class="icon-font icon-back"></i>
-                </a>
-                <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                    <i class="icon-font icon-plane jump-plane"></i>
-                </div>
-            </div>
-            
-                
-                    <!-- <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#浮动布局"><span class="toc-number">1.</span> <span class="toc-text">浮动布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对定位布局"><span class="toc-number">2.</span> <span class="toc-text">绝对定位布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex布局"><span class="toc-number">3.</span> <span class="toc-text">flex布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表格布局"><span class="toc-number">4.</span> <span class="toc-text">表格布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid网格布局"><span class="toc-number">5.</span> <span class="toc-text">grid网格布局</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div> -->
-                    
-    </div>
-</aside>
-                
-                    <section id="comments">
-                        <!--高速版，加载速度快，使用前需测试页面的兼容性-->
-                        <div id="SOHUCS" sid="CSS 5种布局方案"></div>
-                        <script>
-                            (function() {
-                                var appid = 'cytyoA11C',
-                                    conf = '87d351e17b9f348b27029f1770f8bb6e';
-                                var doc = document,
-                                    s = doc.createElement('script'),
-                                    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-                                s.type = 'text/javascript';
-                                s.charset = 'utf-8';
-                                s.src = 'http://assets.changyan.sohu.com/upload/changyan.js?conf=' + conf + '&appid=' + appid;
-                                h.insertBefore(s, h.firstChild);
-                                window.SCS_NO_IFRAME = true;
-                            })()
-                        </script>
-                    </section>
-                    
-                        <!-- 目录内容 -->
-                        
-                            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-                                <span class="btn-bg"></span>
-                                <span class="btn-text">文章导航</span>
-                            </p>
-                            <div id="toc-article" class="toc-article">
-                                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-                                <strong class="toc-title">文章目录</strong>
-                                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#浮动布局"><span class="toc-number">1.</span> <span class="toc-text">浮动布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对定位布局"><span class="toc-number">2.</span> <span class="toc-text">绝对定位布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex布局"><span class="toc-number">3.</span> <span class="toc-text">flex布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表格布局"><span class="toc-number">4.</span> <span class="toc-text">表格布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid网格布局"><span class="toc-number">5.</span> <span class="toc-text">grid网格布局</span></a></li></ol>
-                            </div>
-                            <script type="text/javascript">
-                                function showToc() {
-                                    var toc_article = document.getElementById("toc-article");
-                                    var show_toc_btn = document.getElementById("show-toc-btn");
-                                    console.log(toc_article);
-                                    toc_article.setAttribute("style", "display:block");
-                                    show_toc_btn.setAttribute("style", "display:none");
-                                };
 
-                                function showBtn() {
-                                    var toc_article = document.getElementById("toc-article");
-                                    var show_toc_btn = document.getElementById("show-toc-btn");
-                                    console.log(show_toc_btn);
-                                    toc_article.setAttribute("style", "display:none");
-                                    show_toc_btn.setAttribute("style", "display:block");
-                                };
-                            </script>
-                            
-                                <!-- 目录内容结束 -->
                             </div>
                         </div>
                     </div>
@@ -532,10 +297,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		toc_hide_index: false,
 		root: "/",
