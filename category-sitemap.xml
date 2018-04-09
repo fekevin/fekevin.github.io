@@ -7,22 +7,22 @@
     </url>
 
     <url>
+        <loc>http://blog.itjiaolong.top/categories/JavaScript/</loc>
+        <lastmod>2018-04-09T01:27:22.913Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://blog.itjiaolong.top/categories/HTTP/</loc>
-        <lastmod>2018-04-08T09:29:37.020Z</lastmod>
+        <lastmod>2018-04-09T01:27:38.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://blog.itjiaolong.top/categories/CSS/</loc>
-        <lastmod>2018-04-09T01:04:58.524Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.itjiaolong.top/categories/JavaScript/</loc>
-        <lastmod>2018-04-09T01:05:07.359Z</lastmod>
+        <lastmod>2018-04-09T01:27:52.482Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

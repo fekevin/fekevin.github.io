@@ -2,36 +2,22 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://blog.itjiaolong.top/tags/http/</loc>
-        <lastmod>2018-04-08T09:29:37.020Z</lastmod>
+        <loc>http://blog.itjiaolong.top/tags/Array/</loc>
+        <lastmod>2018-04-09T01:27:22.913Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://blog.itjiaolong.top/tags/CSS/</loc>
-        <lastmod>2018-04-09T01:04:58.524Z</lastmod>
+        <loc>http://blog.itjiaolong.top/tags/http/</loc>
+        <lastmod>2018-04-09T01:27:38.259Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://blog.itjiaolong.top/tags/%E5%B8%83%E5%B1%80/</loc>
-        <lastmod>2018-04-09T01:04:58.524Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.itjiaolong.top/tags/JavaScript/</loc>
-        <lastmod>2018-04-09T01:05:07.359Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://blog.itjiaolong.top/tags/Array/</loc>
-        <lastmod>2018-04-09T01:05:07.359Z</lastmod>
+        <lastmod>2018-04-09T01:27:52.482Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
