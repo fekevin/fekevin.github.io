@@ -233,10 +233,43 @@
                                     
             </header>
 
+
+            <!-- 目录内容 -->
             
-                <div class="article-entry" itemprop="articleBody">
+                <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+                    <span class="btn-bg"></span>
+                    <span class="btn-text">文章导航</span>
+                </p>
+                <div id="toc-article" class="toc-article">
+                    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                    <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#浮动布局"><span class="toc-number">1.</span> <span class="toc-text">浮动布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对定位布局"><span class="toc-number">2.</span> <span class="toc-text">绝对定位布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex布局"><span class="toc-number">3.</span> <span class="toc-text">flex布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表格布局"><span class="toc-number">4.</span> <span class="toc-text">表格布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#grid网格布局"><span class="toc-number">5.</span> <span class="toc-text">grid网格布局</span></a></li></ol>
+                </div>
+                <script type="text/javascript">
+                    function showToc() {
+                        var toc_article = document.getElementById("toc-article");
+                        var show_toc_btn = document.getElementById("show-toc-btn");
+                        toc_article.setAttribute("style", "display:block");
+                        show_toc_btn.setAttribute("style", "display:none");
+                    };
+
+                    function showBtn() {
+                        var toc_article = document.getElementById("toc-article");
+                        var show_toc_btn = document.getElementById("show-toc-btn");
+                        toc_article.setAttribute("style", "display:none");
+                        show_toc_btn.setAttribute("style", "display:block");
+                    };
+                </script>
+                
+                    <!-- 目录内容结束 -->
+
+
+
+
                     
-                                        <p>以下5种布局方案均为两边固定中间自适应。</p>
+                        <div class="article-entry" itemprop="articleBody">
+                            
+                                                <p>以下5种布局方案均为两边固定中间自适应。</p>
 <a id="more"></a>
 <h3 id="浮动布局"><a href="#浮动布局" class="headerlink" title="浮动布局"></a>浮动布局</h3><pre><code>&lt;section&gt;
     &lt;style&gt;
@@ -374,9 +407,9 @@
     &lt;/article&gt;
 &lt;/section&gt;
 </code></pre>
-                                            
+                                                    
 
-                                                
+                                                        
         </div>
         <div class="article-info article-info-index">
             
@@ -612,20 +645,20 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
                         <ul class="article-tag-list" q-show="showTags">
                             
                                 <li class="article-tag-list-item">
+                                    <a href="javascript:void(0)" class="js-tag color4">
+                                        CSS
+                                    </a>
+                                </li>
+                                
+                                <li class="article-tag-list-item">
+                                    <a href="javascript:void(0)" class="js-tag color3">
+                                        布局
+                                    </a>
+                                </li>
+                                
+                                <li class="article-tag-list-item">
                                     <a href="javascript:void(0)" class="js-tag color5">
                                         http
-                                    </a>
-                                </li>
-                                
-                                <li class="article-tag-list-item">
-                                    <a href="javascript:void(0)" class="js-tag color4">
-                                        -JavaScript -Array
-                                    </a>
-                                </li>
-                                
-                                <li class="article-tag-list-item">
-                                    <a href="javascript:void(0)" class="js-tag color2">
-                                        JavaScript Array
                                     </a>
                                 </li>
                                 
@@ -638,18 +671,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
                                 <li class="article-tag-list-item">
                                     <a href="javascript:void(0)" class="js-tag color1">
                                         Array
-                                    </a>
-                                </li>
-                                
-                                <li class="article-tag-list-item">
-                                    <a href="javascript:void(0)" class="js-tag color4">
-                                        CSS
-                                    </a>
-                                </li>
-                                
-                                <li class="article-tag-list-item">
-                                    <a href="javascript:void(0)" class="js-tag color3">
-                                        布局
                                     </a>
                                 </li>
                                 
