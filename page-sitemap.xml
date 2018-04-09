@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>http://blog.itjiaolong.top/photo/</loc>
+        <lastmod>2018-04-09T06:52:57.161Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://blog.itjiaolong.top/tags/</loc>
         <lastmod>2018-04-09T06:13:53.239Z</lastmod>
         <changefreq>weekly</changefreq>
